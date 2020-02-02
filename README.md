@@ -1,2 +1,0 @@
-# Foodify
-Community food sharing
