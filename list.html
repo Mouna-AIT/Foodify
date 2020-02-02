@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <link rel="icon" href="images/logo.jpg" type="image/x-icon" />
     <!-- Theme tittle -->
-    <title>Foodliy</title>
+    <title>Foodily</title>
 
     <!-- Theme style CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -27,11 +32,10 @@
             </form>
         </div>
         <nav class="navbar navbar-expand-lg">
-            <div class="navbar-brand">
+
            		<a class="logo" href="index.html"><img src="images/logo.jpg" height="100" width="100" alt=""></a>
               <img src="images/banner.png" height="50" width="250" />
-              <!-- <a href="#" class="number">123-456-7890</a> -->
-            </div>
+
             <!-- Small Divice Menu-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar_supported"  aria-label="Toggle navigation">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -45,12 +49,16 @@
             <div class="collapse navbar-collapse navbar_supported">
                 <ul class="navbar-nav">
                     <li class="dropdown">
-                        <a class="nav-link dropdown-toggle active" href="index.html">Home</a>
+                        <a class="nav-link dropdown-toggle active" href="index.html" data-toggle="dropdown">Home</a>
                     </li>
                     <li><a href="solution.html">Solutions</a></li>
                     <li class="dropdown">
-                        <a class="nav-link dropdown-toggle" href="products.html"  >Products</a>
-                      </li>
+                        <a class="nav-link dropdown-toggle" href="products.html" role="button" data-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="products.html">Mobile App</a></li> 
+                          <li><a href="index.html">Donation</a></li>  
+                        </ul>
+                              </li> 
                       <li>
                         <a href="list.html">Listing</a>
                       </li>
@@ -73,7 +81,7 @@
                 <a href="blog-details.html"><img src="images/testimonial-1.png" alt=""></a>
                 <div class="media-body">
                     <a href="blog-details.html">How to Optimize a Digital Customer Experience</a>
-                    <h6>October 31, 2018</h6>
+                    <h6>October 31, 2020</h6>
                 </div>
             </div>
             <div class="media">
@@ -94,9 +102,9 @@
         <div class="address">
             <h4 class="headline">Contact Info</h4>
             <ul>
-                <li><i class="fas fa-map-marker-alt"></i>113 momo Street, bd 721 <br>NY 20012</li>
-                <li><a href="#"><i class="fas fa-envelope"></i>millermedia7@gmail.com</a></li>
-                <li><a href="#" class="call"><i class="fas fa-phone"></i>585.455.2639</a></li>
+                <li><i class="fas fa-map-marker-alt"></i>ElleHacks York</li>
+                <li><a href="#"><i class="fas fa-envelope"></i>foodify@gmail.com</a></li>
+                <li><a href="#" class="call"><i class="fas fa-phone"></i>111.111.1111</a></li>
             </ul>
         </div>
         <ul class="toggle_social">
@@ -223,7 +231,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#">0236</a></td>
+        <td><a href="#" onclick="popup()">0236</a></td>
         <td>February 02, 2019</td>
         <td>Homes First</td>
         <td>
@@ -327,6 +335,7 @@
 		<td>
 			Participants
 		</td>
+	</tr>
       <tr>
         <td><a href="#">0236</a></td>
         <td>February 02, 2019</td>
@@ -360,11 +369,17 @@
         <td>
           February 12, 2019
         </td>
+		<td>
+		N/A
+		</td>
+		<td>
+		Participants
+		</td>
       </tr>
       <tr>
         <td><a href="#">0235</a></td>
         <td>January 30, 2019</td>
-        <td>Loblaws</td>
+        <td>Seaton House</td>
         <td>
           M4Y 3H7
         </td>
@@ -372,15 +387,25 @@
             Eggs, Canned Tuna, Butter, Spinach
         </td>
         <td>
-          February 10, 2019
+          N/A
         </td>
+		<td>
+		February 12, 2019
+		</td>
+		<td>
+		Receiver
+		</td>
       </tr>
     </tbody>
   </table>
       </div>
  
     <div id="menu3" class="tab-pane fade" style="font-size: 15px">
-	
+	<br>
+	<label>Enter the food type:</label>
+	<input></input>
+	<br>
+	<br>
 	
       <table class="table table-hover">
     <thead>
@@ -392,81 +417,179 @@
         <th>
           Food Type
         </th>
+		<th>
+			Best before
+		</th>
         <th>
           Pickup Date
         </th>
+		<th>
+		Post Owner
+		</th>
       </tr>
+	        <tr>
+        <td><a href="#">0236</a></td>
+        <td>February 02, 2019</td>
+        <td>T&T</td>
+        <td>
+          M5E 3G5
+        </td>
+        <td>
+            Oranges, Instant Noodles, Mixed Nuts, Apple Juice
+        </td>
+        <td>
+          February 12, 2019
+        </td>
+		<td>
+			N/A
+		</td>
+		<td>
+			Participants
+		</td>
+		</tr>
+      <tr>
+        <td><a href="#">0236</a></td>
+        <td>February 02, 2019</td>
+        <td>Cornerstone Place</td>
+        <td>
+          M5E 3G5
+        </td>
+        <td>
+            Oranges, Instant Noodles, Mixed Nuts, Apple Juice
+        </td>
+        <td>
+          N/A
+        </td>
+		<td>
+		February 12, 2019
+		</td>
+		<td>
+		Receiver
+		</td>
+      </tr>
+	  
+		
     </thead>
     <tbody>
       <tr>
         <td><a href="#">0236</a></td>
         <td>February 02, 2019</td>
-        <td>Korean Grill House</td>
-        <td>
-          123 Queen Street Easr, Toronto, M5E 3G5
-        </td>
-        <td>
-            Oranges, Instant Noodles, Mixed Nuts, Apple Juice
-        </td>
-        <td>
-          February 12, 2019
-        </td>
-      <tr>
-        <td><a href="#">0236</a></td>
-        <td>February 02, 2019</td>
-        <td>Korean Grill House</td>
-        <td>
-          123 Queen Street Easr, Toronto, M5E 3G5
-        </td>
-        <td>
-            Oranges, Instant Noodles, Mixed Nuts, Apple Juice
-        </td>
-        <td>
-          February 12, 2019
-        </td>
-      </tr>
-      <tr>
-        <td><a href="#">0236</a></td>
-        <td>February 02, 2019</td>
-        <td>Korean Grill House</td>
-        <td>
-          123 Queen Street Easr, Toronto, M5E 3G5
-        </td>
-        <td>
-            Oranges, Instant Noodles, Mixed Nuts, Apple Juice
-        </td>
-        <td>
-          February 12, 2019
-        </td>
-      </tr>
-      <tr>
-        <td><a href="#">0235</a></td>
-        <td>January 30, 2019</td>
         <td>Loblaws</td>
         <td>
-          5767 Yonge Street, Toronto, M4Y 3H7
+          123 Queen Street East, Toronto, M5E 3G5
         </td>
         <td>
-            Eggs, Canned Tuna, Butter, Spinach
+            Oranges, Instant Noodles, Mixed Nuts, Apple Juice
         </td>
         <td>
-          February 10, 2019
+          February 12, 2019
         </td>
+		<td>
+		N/A
+		</td>
+		
+		<td>
+		Participant
+		</td>
+      <tr>
+        <td><a href="#">0236</a></td>
+        <td>February 02, 2019</td>
+        <td>Walmart</td>
+        <td>
+          123 Queen Street East, Toronto, M5E 3G5
+        </td>
+        <td>
+            Oranges, Instant Noodles, Mixed Nuts, Apple Juice
+        </td>
+        <td>
+          February 12, 2019
+        <td>
+		N/A
+		</td>
+		
+		<td>
+		Participant
+		</td>
       </tr>
+   
+      
     </tbody>
   </table>
  </div> 
-	   
- <button type="button" class="btn btn-outline-info" style="font-size: 20px; float:right; margin:8px;">List Food</button>
+	   </div>   
+ <button  onclick="myPost()" type="button" class="btn btn-outline-info" style="font-size: 20px; float:right; margin:8px;">List Food</button>
 
-  <button type="button" class="btn btn-outline-info"style="font-size: 20px; float:right; margin:8px;">Request</button>
-    </div>
+  <button onclick="myRequest()" type="button" class="btn btn-outline-info"style="font-size: 20px; float:right; margin:8px;">Request</button>
+ 
+ <br>
+ <br>
+ <br>
+ <br>
+ 
+<form id="postForm" style="display: none; font-size:20px; align : center; margin-left: auto;
+    margin-right: auto; width: 500px">
+  <div class="form-group"  >
+    <label for="location">Location</label>
+    <input  class="form-control" id="location" placeholder ="Enter location" style="font-size:15px;padding:20px;">
+    
+  </div>
+  <div class="form-group">
+    <label for="type">Food Type</label>
+    <input  class="form-control" id="type" placeholder="Food type"style="font-size:15px;padding:20px;">
+  </div>
+  
+  <div class="form-group">
+    <label for="quantity">Quantity</label>
+    <input  class="form-control" id="quantity" placeholder="Quantity"style="font-size:15px;padding:20px;">
+  </div>
+  
+  <div class="form-group" id="pickup" style="display: none;">
+    <label for="p_date">Pickup Date</label>
+    <input  class="form-control" id="p_date" placeholder="Date"style="font-size:15px;padding:20px;">
+  </div>
+  
+  <div class="form-group" id="best" style = "display: none;">
+    <label for="b_date">Best before</label>
+    <input  class="form-control" id="b_date" placeholder="Date"style="font-size:15px;padding:20px;">
+  </div>
+  
+  <button type="submit" class="btn btn-primary" style="font-size:15px" onclick="submit">Submit</button>
+</form>
 
     </section>
+	
+
+	
+	<script>
+	function myPost() {
+		document.getElementById("postForm").style.display = "block";
+		document.getElementById("best").style.display = "block";
+		document.getElementById("pickup").style.display="none";
+	}
+	</script>
+	
+	<script>
+	function myRequest() {
+		document.getElementById("postForm").style.display = "block";
+		document.getElementById("pickup").style.display="block";
+		document.getElementById("best").style.display = "none";
+		
+	}
+	</script>
+	<script>
+	function submit(){
+		document.getElementById("postForm").style.display = "none";
+	}
+	</script>
+	<script>
+	function popup(){
+	
+	}
+	</script>
 
     <!-- Banner Area -->
 
-   <h2 class="hungry_text"></h2>
+   <h2 class="hungry_text">Donate to No Kid Hungry to help hungry kids.</h2>
 
 
     <!-- Footer Area -->
@@ -481,15 +604,15 @@
        				<li><a href="contact.html">CONTACTS</a></li>
        			</ul>
        			<div class="col-xl-4 col-lg-5 footer_btn">
-       				<!-- <a href="#" class="theme_btn">Join Us Now</a> -->
-       				<a href="#" class="theme_btn donation">Donation</a>
+       				<a href="index.html" class="theme_btn">Join Us Now</a>
+       				<a href="index.html" class="theme_btn donation">Donation</a>
        			</div>
        		</div>
 
 			<div class="footer_inner row">
 				<div class="col-lg-4 col-md-6 footer_logo wow fadeIn">
 					<a href="index.html"><img src="images/logo.png" alt=""></a>
-					<p>The Foodily charity provides enhanced services to help people </p>
+          <a class="logo" href="index.html"><img src="images/logo.jpg" height="100" width="100" alt=""></a>
 					<ul class="footer_social">
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fa fa-google"></i></a></li>
@@ -515,7 +638,7 @@
 						<li><a href="#">Partner</a></li>
 						<li><a href="#">Jobs</a></li>
 						<li><a href="#">Meet the team </a></li>
-						<li><a href="index.html">About Foodily</a></li>
+						<li><a href="solution.html">About Foodify</a></li>
 					</ul>
 				</div>
 				<div class="footer_widget fw_2 col-md-6 col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.2s">
@@ -524,7 +647,7 @@
 						<li><a href="#">Donate</a></li>
 						<li><a href="#">Fundraise</a></li>
 						<li><a href="#">Attend an Event</a></li>
-						<li><a href="#">Speak Up for envirement</a></li>
+						<li><a href="#">Speak Up for Kids</a></li>
 						<li><a href="#">Other Ways to Give</a></li>
 						<li><a href="#">Summer Meals</a></li>
 						<li><a href="#">Afterschool Meals</a></li>
@@ -534,6 +657,8 @@
 				<div class="footer_widget fw_3 col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.6s">
 					<h4>Stay In  Loop</h4>
 					<ul class="footer_news">
+						<li><a href="#">Campaign For Build Diamond Future Orphan</a></li>
+						<li><a href="#">New Award To Support Children Affected by Crises</a></li>
 						<li><a href="#">New research has revealed a staggering lack of awareness</a></li>
 					</ul>
 				</div>
@@ -542,9 +667,6 @@
 		<div class="copy_right">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 col-md-5 order-md-last">
-						<a href="#" class="call"><i class="flaticon-phone"></i>+1 111-111-1111 </a>
-					</div>
 					<p class="col-lg-8 col-md-7"><a href="#">Foodify</a> © 2020 All Rights Reserved Terms of Use and Privacy Policy</p>
 				</div>
 			</div>
