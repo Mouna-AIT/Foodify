@@ -1,20 +1,5 @@
 @charset "UTF-8";
-/* ------------------------------------------------------
-@File: Default Styles
-@Author: Themazine.
-@Developed By: Emran Khan
-@Developer Email: fed.emran@gmail.com
-@Developer URL: http://emran-khan.com
-
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
-------------------------------------------------------- */
 /* ======================================================
-@Template Name: Gorib 
-@Author: Themazine. 
-@Default Styles
-
 Table of Content: 
 01/ Variables
 02/ Prefix
@@ -55,7 +40,7 @@ Table of Content:
   font: 600 18px/55px "Muli", sans-serif;
   display: inline-block;
   padding: 0 20px;
-  background-image: linear-gradient(to right, #fc5862 0%, #fdb065 51%, #fc5862 100%);
+  background-image: linear-gradient(to right, #58fc89 0%, #fdb065 51%, #fc5862 100%);
   background-size: 200% auto;
   z-index: 1;
 }
@@ -2508,7 +2493,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 .upcoming_event .content_right .more_event .theme_btn {
   background: #fffcf9;
-  color: #fc6d63;
+  color: #58fc89;
   line-height: 45px;
   min-width: 180px;
   box-shadow: none;
