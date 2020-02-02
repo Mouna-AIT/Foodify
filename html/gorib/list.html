@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <link rel="icon" href="images/logo.jpg" type="image/x-icon" />
     <!-- Theme tittle -->
     <title>Foodily</title>
@@ -226,7 +227,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#">0236</a></td>
+        <td><a href="#" onclick="popup()">0236</a></td>
         <td>February 02, 2019</td>
         <td>Homes First</td>
         <td>
@@ -511,13 +512,76 @@
     </tbody>
   </table>
  </div> 
-	   
- <button type="button" class="btn btn-outline-info" style="font-size: 20px; float:right; margin:8px;">List Food</button>
+	   </div>   
+ <button  onclick="myPost()" type="button" class="btn btn-outline-info" style="font-size: 20px; float:right; margin:8px;">List Food</button>
 
-  <button type="button" class="btn btn-outline-info"style="font-size: 20px; float:right; margin:8px;">Request</button>
-    </div>
+  <button onclick="myRequest()" type="button" class="btn btn-outline-info"style="font-size: 20px; float:right; margin:8px;">Request</button>
+ 
+ <br>
+ <br>
+ <br>
+ <br>
+ 
+<form id="postForm" style="display: none; font-size:20px; align : center; margin-left: auto;
+    margin-right: auto; width: 500px">
+  <div class="form-group"  >
+    <label for="location">Location</label>
+    <input  class="form-control" id="location" placeholder ="Enter location" style="font-size:15px;padding:20px;">
+    
+  </div>
+  <div class="form-group">
+    <label for="type">Food Type</label>
+    <input  class="form-control" id="type" placeholder="Food type"style="font-size:15px;padding:20px;">
+  </div>
+  
+  <div class="form-group">
+    <label for="quantity">Quantity</label>
+    <input  class="form-control" id="quantity" placeholder="Quantity"style="font-size:15px;padding:20px;">
+  </div>
+  
+  <div class="form-group" id="pickup" style="display: none;">
+    <label for="p_date">Pickup Date</label>
+    <input  class="form-control" id="p_date" placeholder="Date"style="font-size:15px;padding:20px;">
+  </div>
+  
+  <div class="form-group" id="best" style = "display: none;">
+    <label for="b_date">Best before</label>
+    <input  class="form-control" id="b_date" placeholder="Date"style="font-size:15px;padding:20px;">
+  </div>
+  
+  <button type="submit" class="btn btn-primary" style="font-size:15px" onclick="submit">Submit</button>
+</form>
 
     </section>
+	
+
+	
+	<script>
+	function myPost() {
+		document.getElementById("postForm").style.display = "block";
+		document.getElementById("best").style.display = "block";
+		document.getElementById("pickup").style.display="none";
+	}
+	</script>
+	
+	<script>
+	function myRequest() {
+		document.getElementById("postForm").style.display = "block";
+		document.getElementById("pickup").style.display="block";
+		document.getElementById("best").style.display = "none";
+		
+	}
+	</script>
+	<script>
+	function submit(){
+		document.getElementById("postForm").style.display = "none";
+	}
+	</script>
+	<script>
+	function popup(){
+	
+	}
+	</script>
 
     <!-- Banner Area -->
 
