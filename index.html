@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +7,11 @@
 
     <link rel="icon" href="images/logo.jpg" type="image/x-icon" />
     <!-- Theme tittle -->
-    <title>Foodily</title>
+    <title>Foodliy</title>
 
     <!-- Theme style CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 <body>
 
@@ -32,6 +30,7 @@
             <div class="navbar-brand">
            		<a class="logo" href="index.html"><img src="images/logo.jpg" height="100" width="100" alt=""></a>
               <img src="images/banner.png" height="50" width="250" />
+              <!-- <a href="#" class="number">123-456-7890</a> -->
             </div>
             <!-- Small Divice Menu-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar_supported"  aria-label="Toggle navigation">
@@ -46,30 +45,19 @@
             <div class="collapse navbar-collapse navbar_supported">
                 <ul class="navbar-nav">
                     <li class="dropdown">
-<<<<<<< HEAD:html/gorib/products.html
-                        <a class="nav-link dropdown-toggle active" href="index.html" role="button">Home</a>
-                    <li><a href="solution.html">Solutions</a></li>
-					<li class="dropdown">
-							<a class="nav-link dropdown-toggle" href="products.html" role="button" data-toggle="dropdown">Products</a>
-							<ul class="dropdown-menu">
-								<li><a href="events.html">Mobile App</a></li> 
-								<li><a href="events-single.html">Donation</a></li>  
-							</ul>
-                    </li>  
-                </ul>   
-=======
-                        <a class="nav-link dropdown-toggle active" href="index.html" data-toggle="dropdown">Home</a>
+                        <a class="nav-link dropdown-toggle active" href="index.html" role="button" data-toggle="dropdown">Home</a>
+                    <li>
+                      <a href="solution.html">Solutions</a>
                     </li>
-                    <li><a href="solution.html">Solutions</a></li>
                     <li class="dropdown">
-                        <a class="nav-link dropdown-toggle" href="products.html"  >Products</a>
-                      </li>
-                      <li>
-                        <a href="list.html">Listing</a>
-                      </li>
+                        <a class="nav-link dropdown-toggle" href="products.html" role="button" >Products</a>
+                    </li>
+                    <li>
+                      <a href="list.html">Listing</a>
+                    </li>
                 </ul>
->>>>>>> 16398c0024e847d65c8ebbfe318dd769bf771ac0:themazine.com/html/gorib/products.html
             </div>
+        </nav>
     </header>
     <!-- Header Area -->
 
@@ -77,7 +65,6 @@
     <div class="toggle_menu">
         <div class="toggle_logo">
             <a href="index.html"><img src="images/logo.png" alt=""></a>
-
             <a class="close theme_btn"><i class="fas fa-close"></i></a>
         </div>
         <p>We are a tight knit collective of technology team, and digital change Hackers from ElleHacks that work together to form impactful campaigns that elevate brands.</p>
@@ -96,25 +83,94 @@
             <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
         </ul>
     </div>
-    <!-- Toggle Menu Area -->
 
-    <!-- Banner Area -->
-    <section class="pages_banner">
-		<div class="container">
-			<h2>Products</h2>
-			<p>Our App aids in the reduction of food waste. A business could easily use this app to schedule pickups of surplus food, and can even select non-profits that are in need to give away extra food.</p>
+    <!-- Banner Area -->  
 
-      <p>Available on App Store and Google Play
-        <img src="images/phone.png" alt="phone" height="120" width="120" align="left">
-
-      </p>
-    </div>
+    <section class="home_banner row">
+    	<div class="col-lg-6 banner_img wow fadeInLeft" id="parallax">
+    		<img src="images/banner-img.png" alt="" class="layer layer_1" data-depth="0.10">
+    	</div>
+    	<div class="col-lg-6 banner_contant">
+    		<h2 class="wow fadeInUp">Foodify</h2>
+    		<p class="wow fadeInUp" data-wow-delay="0.3s"> An online platform that connects those with excess food with those who needs it</p>
+    		<a href="login.html" class="theme_btn wow fadeInUp" data-wow-delay="0.6s">Join Now</a>
+    		<a href="list.html" class="theme_btn donet wow fadeInUp" data-wow-delay="0.6s">Login</a>
+    	</div> 
+    <!-- Donation Area -->
+    <section class="donation_area">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-8 donation_contant wow fadeInLeft">
+    				<img src="images/donation-shap.png" alt="" class="donation_shap">
+    				<h4>Foodily Donation <br> & Raise money. </h4>
+    				<h2>People like you do <br>amazing things <br>on Foodily every day!</h2>
+    				<p>Power your ongoing and emergency fundraising efforts quickly and easily. Foodily relies on email marketing to connect with their Food donors and raise money for <br> people in need.</p>
+    			</div>
+    			<div class="col-lg-4 donation_img wow fadeInRight">
+    				<img src="images/donation-1.png" alt="">
+    				<a href="#" class="theme_btn">Raise Money</a>
+    			</div>
+    		</div>
+    		<div class="row donation_row">
+    			<div class="col-lg-7 donation_contant wow fadeInRight" data-wow-delay="0.3s">
+    				<img src="images/donation-shap.png" alt="" class="donation_shap">
+    				<h2>Problems</h2>
+					<p>points</p>
+					<br>
+					<a href="#" class="theme_btn">Read More</a>
+    			</div>
+    			<div class="col-lg-5 donation_img order-lg-first wow fadeInLeft" data-wow-delay="0.3s">
+    				<img src="images/donation-2.png" alt="">
+    			</div>
+    		</div>
+    	</div>
     </section>
-    <!-- Banner Area -->
+    <!-- UPCOMING EVENTS  -->
+    <section class="upcoming_event row">
+    	<div class="col-lg-8">
+    		<div class="upcoming_content">
+    			<img src="images/tittle-shap.png" alt="" class="tittle_shap">
+    			<h2>UPCOMING EVENTS</h2>
 
-   <h2 class="hungry_text">Donate to No Kid Hungry to help hungry kids.</h2>
-
-
+    			<div class="media wow fadeInUp">
+    				<div class="media_body">
+    					<h3><b>10</b>February 2020</h3>
+    				</div>
+    				<div class="media-body">
+    					<h6>START: FEB 10, 2022 <span>END: FEB 13, 2022</span></h6>
+    					<a href="#">Walmart 3 days last sale</a>
+    				</div>
+    			</div>
+    			<div class="media wow fadeInUp" data-wow-delay="0.3s">
+    				<div class="media_body">
+    					<h3><b>20</b>February 2020</h3>
+    				</div>
+    				<div class="media-body">
+    					<h6>START: FEB 20, 2020 <span>END: FEB 21, 2020</span></h6>
+    					<a href="#">Food giveaway night at restaurant Laymoon</a>
+    				</div>
+    			</div>
+    			<div class="media wow fadeInUp" data-wow-delay="0.6s">
+    				<div class="media_body">
+    					<h3><b>03</b>February 2020</h3>
+    				</div>
+    				<div class="media-body">
+    					<h6>START: JAN 19, 2020 <span>END: JAN 18, 2020</span></h6>
+    					<a href="#">Nothing goes to waste</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="col-lg-4 content_right wow fadeInRight">
+    		<a href="#" class="theme_btn visit_btn">Visit More Event List</a>
+    		<div class="more_event">
+    			<h6><b>2</b>february 2019 </h6>
+    			<a href="#" class="heding">Fundraising and Food collection as a team in York Univerity </a>
+    			<a href="#" class="theme_btn">Learn  more</a>
+    		</div>
+    	</div>
+    </section>
+    <!-- UPCOMING EVENTS  -->
     <!-- Footer Area -->
     <footer class="footer_area no-shap">
        <div class="container">
@@ -135,7 +191,7 @@
 			<div class="footer_inner row">
 				<div class="col-lg-4 col-md-6 footer_logo wow fadeIn">
 					<a href="index.html"><img src="images/logo.png" alt=""></a>
-					<p>The Gorib charity provides enhanced services over and above what the NHS funds. help child </p>
+					<p>The Foodify charity provides enhanced services over and above what the NHS funds. help child </p>
 					<ul class="footer_social">
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fa fa-google"></i></a></li>
@@ -161,7 +217,7 @@
 						<li><a href="#">Partner</a></li>
 						<li><a href="#">Jobs</a></li>
 						<li><a href="#">Meet the team </a></li>
-						<li><a href="about.html">About Gorib</a></li>
+						<li><a href="index.html">About Foodify</a></li>
 					</ul>
 				</div>
 				<div class="footer_widget fw_2 col-md-6 col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.2s">
@@ -191,9 +247,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4 col-md-5 order-md-last">
-						<a href="#" class="call"><i class="flaticon-phone"></i>+88 - 01912704287 </a>
+		
 					</div>
-					<p class="col-lg-8 col-md-7"><a href="#">Gorib</a> © 2018 All Rights Reserved Terms of Use and Privacy Policy</p>
+					<p class="col-lg-8 col-md-7"><a href="#">Foodify</a> © 2020 All Rights Reserved Terms of Use and Privacy Policy</p>
 				</div>
 			</div>
 		</div>
@@ -206,7 +262,7 @@
     </button>
 
     <!-- Preloader -->
-    <div class="preloader"></div>
+	<div class="preloader"></div>
 
     <!-- jQuery v3.3.1 -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -219,6 +275,7 @@
     <script src="vendors/counterup/jquery.waypoints.min.js"></script>
     <script src="vendors/counterup/jquery.counterup.min.js"></script>
     <script src="vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/parallaxmouse/parallax.min.js"></script>
 
     <!-- Theme js / Custom js -->
     <script src="js/theme.js"></script>
